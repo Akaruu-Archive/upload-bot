@@ -1,4 +1,4 @@
-import t from '../src/functions/transcription';
+import t from '../src/functions/getFirstFrame';
 
 (async() => {
   const c = await t("");
