@@ -77,6 +77,6 @@ export default async function upload(media: string) {
   });
 
   await browser.close();
-  console.log(href)
+
   return href;
 };

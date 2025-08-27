@@ -1,6 +1,7 @@
 import os
 import subprocess
 import speech_recognition as sr
+import argparse
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
@@ -21,3 +22,12 @@ def transcription(video_file):
 
   os.remove(audio_file)
   return transcription
+
+if __name__ == "__main__":
+  parser = argparse.ArgumentParser(description='Transcription audio à partir d\'une vidéo.')
+  parser.add_argument('video_file', type=str, help='URL ou chemin du fichier vidéo à transcrire')
+  
+  args = parser.parse_args()
+  
+  result = transcription(args.video_file)
+  print(result)
