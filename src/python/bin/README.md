@@ -1,1 +1,1 @@
-download https://ffmpeg.org/download.html and add all .exe in bin is here :)
+download https://ffmpeg.org/download.html and add all .exe in bin here :)
